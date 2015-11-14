@@ -1,23 +1,26 @@
 \select@language {english}
-\contentsline {section}{References}{1}
-\contentsline {section}{\numberline {1}Introduction}{1}
-\contentsline {subsection}{\numberline {1.1}What is Monopoly?}{1}
-\contentsline {subsection}{\numberline {1.2}Rules}{1}
-\contentsline {section}{\numberline {2}Model \& Simulation}{1}
-\contentsline {subsection}{\numberline {2.1}Dice Rolls}{1}
-\contentsline {subsection}{\numberline {2.2}Chance and Community Chests}{2}
-\contentsline {subsubsection}{\numberline {2.2.1}Chance Cards}{2}
-\contentsline {subsubsection}{\numberline {2.2.2}Community Chest Cards}{3}
-\contentsline {subsubsection}{\numberline {2.2.3}Exploitation}{4}
-\contentsline {subsection}{\numberline {2.3}Jail}{4}
-\contentsline {subsubsection}{\numberline {2.3.1}Increasing Odds}{4}
-\contentsline {subsubsection}{\numberline {2.3.2}Paradigm}{4}
-\contentsline {section}{\numberline {3}Markov Chains}{5}
-\contentsline {subsection}{\numberline {3.1}What is a Markov Chain?}{5}
-\contentsline {subsection}{\numberline {3.2}Seeded Matrices}{5}
-\contentsline {subsection}{\numberline {3.3}Probabilistic Outcome}{5}
-\contentsline {section}{\numberline {4}Expansion to Greater Dimensions}{5}
-\contentsline {subsection}{\numberline {4.1}Developments}{5}
-\contentsline {subsection}{\numberline {4.2}Real Life Applications}{5}
-\contentsline {section}{\numberline {5}Conclusion}{5}
-\contentsline {section}{\numberline {6}Bibliography}{5}
+\contentsline {section}{References}{1}{section*.1}
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}
+\contentsline {subsection}{\numberline {1.1}What is Monopoly?}{1}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Rules}{1}{subsection.1.2}
+\contentsline {section}{\numberline {2}Model \& Simulation}{2}{section.2}
+\contentsline {subsection}{\numberline {2.1}Dice Rolls}{2}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Chance and Community Chests}{3}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Chance Cards}{4}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}Community Chest Cards}{4}{subsubsection.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.3}Exploitation}{5}{subsubsection.2.2.3}
+\contentsline {subsection}{\numberline {2.3}Jail}{5}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}Increasing Odds}{5}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}Paradigm}{6}{subsubsection.2.3.2}
+\contentsline {section}{\numberline {3}Markov Chains}{7}{section.3}
+\contentsline {subsection}{\numberline {3.1}What is a Markov Chain?}{7}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Parametrisation}{7}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Seeded Matrices}{7}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}Assumptions}{7}{subsubsection.3.3.1}
+\contentsline {subsection}{\numberline {3.4}Simulation}{7}{subsection.3.4}
+\contentsline {subsubsection}{\numberline {3.4.1}Set Up}{7}{subsubsection.3.4.1}
+\contentsline {subsubsection}{\numberline {3.4.2}Aspects}{8}{subsubsection.3.4.2}
+\contentsline {subsection}{\numberline {3.5}Tile Probabilities}{8}{subsection.3.5}
+\contentsline {subsubsection}{\numberline {3.5.1}Probabilistic Outcome}{9}{subsubsection.3.5.1}
+\contentsline {section}{\numberline {4}Conclusion}{9}{section.4}
+\contentsline {section}{\numberline {5}Bibliography}{10}{section.5}
