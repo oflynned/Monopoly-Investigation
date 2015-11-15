@@ -92,8 +92,8 @@ Monopoly board traversal is the result of fundamentally rolling two independent 
 \end{table}
 Given that a double has not been rolled on the first turn of the game, the following is the probabilistic outcome of landing on a square from starting position.
 \begin{align*}
-\includegraphics[width=0.4\textwidth]{non_doubles_go.png} 
-\includegraphics[width=0.4\textwidth]{incl_doubles_go.png}
+\includegraphics[width=0.5\textwidth]{non_doubles_go.png} 
+\includegraphics[width=0.5\textwidth]{incl_doubles_go.png}
 \end{align*}
 Given that the outcome was not a double, there is a significantly higher chance of landing on a chance square, which is comparatively higher than landing on squares Oriental Ave or Vermont Ave. Comparatively so, there is still a higher than 10\% chance of landing on squares 5-9.
 \begin{align*}
@@ -106,7 +106,7 @@ The Monopoly board itself is a 40x40 Matrix containing a mixture of tiles rangin
 \centering
 \includegraphics[width=0.6\textwidth]{triple_traverse.jpg}
 \end{align*}
-It is possible to traverse from starting position to the highlighted chance space in one go by rolling 6 6s over 3 turns, its chance of occurrence is exceedingly low, and the player must succumb to the \emph{No Speeding} rule, by which one must go to jail. The chance of rolling three doubles has a $0.4\%$ chance of occurrence. Although small, in every 1,000 rolls there will tend to be 4 triple double-rolls thrown and therefore the player gets sent to jail. Rolling 3 double 6s has a chance of $0.0000214\%$ (or $\left(\frac{1}{6}\right)^{6}$) of happening, which is probabilistically extremely unlikely, but still possible.
+It is possible to traverse from starting position to the highlighted chance space in one go by rolling 6 6s over 3 turns, its chance of occurrence is exceedingly low, and the player must succumb to the \emph{No Speeding} rule, by which one must go to jail. The chance of rolling three doubles has a $0.4\%$ chance of occurrence. Although small, in every 1,000 rolls there will tend to be 4 triple double-rolls thrown and therefore the player gets sent to jail. Rolling 3 double 6s has a chance of $0.0000214\%$ (or $\left(\frac{1}{6}\right)^{6}$) of happening, which is probabilistically extremely unlikely, but still possible with fair dice, where it tends to happen twice in every 100,000 rolls.
 \begin{align*}
 \frac{1}{6}\approx16.7\% \quad &\textsl{of rolling 1 double}\\
 \frac{1}{36}\approx2.8\% \quad &\textsl{of rolling 2 doubles}\\
@@ -244,7 +244,7 @@ Roll & Process              & Probability & Cumulative Probability \\
 \end{table}
 \section{Markov Chains}
 \subsection{What is a Markov Chain?}
-Monopoly is based on a 40x40 dimension probability matrix of tiles where each row and column pair represents a space on the board which is subject to a process called a \emph{Markov Chain}. A Markov chain is a probabilistic process in which a steady state probability matrix which is seeded from long term rolls and forecasts. It involves a finite number of states within a finite encapsulation, in this case, the 40 tiles. Markov chains are memoryless, which means that the process in which the player may move freely from tile to tile is independent of the previous tile via dice rolls. Markovian processes are random process whose future probabilities are based on the 
+Monopoly is based on a 40x40 dimension probability matrix of tiles where each row and column pair represents a space on the board which is subject to a process called a \emph{Markov Chain}. A Markov chain is a probabilistic process in which a steady state probability matrix which is seeded from long term rolls and forecasts. It involves a finite number of states within a finite encapsulation, in this case, the 40 tiles. Markov chains are memoryless, which means that the process in which the player may move freely from tile to tile is independent of the previous tile via dice rolls. Markovian processes are random process whose future probabilities are based on the only the current state and not on the sequence of events preceding the element.
 
 \subsection{Parametrisation}
 In order to calculate the probabilities per tile, Monopoly must have a set of Markovian properties calculable by some general factors:
@@ -260,20 +260,45 @@ In order to calculate the probabilities per tile, Monopoly must have a set of Ma
 \item Steady state vector
 \begin{itemize}
 \item Adheres to where the sequence $x_0,x_1,...x_n$ is a set of probability vectors whereby the stochastic matrix A is such that $x_{n+1}=Ax_{n}$.
-\item Approximates the long term process of the behaviour.
+\item Approximates the long term process of the behaviour whereby over subsequent iterations, the Markov Chain tends to $(Ax_{n+1})A=A^2x_{n+1},A^3x_{n+1},...,A^nx_{n+1}$ where $n$ is the period later from the initial time $t$
 \end{itemize}
 \end{itemize}
+
+\subsubsection{Transition Matrices}
+The 40x40, or 1,600 transitional probabilities for all tiles within the Markov sequence encodes matrix M in a 40x40 of the probabilities of moving from one tile to another for in this case, $n=40$.
+\begin{table}[h]
+\centering
+\label{Transition Matrix}
+\begin{tabular}{ccccccc}
+                                           &                        & \multicolumn{5}{c}{To}                                                                                                     \\ \cline{3-7} 
+                                           & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{$1$} & \multicolumn{1}{c|}{$2$} & \multicolumn{1}{c|}{$3$} & \multicolumn{1}{c|}{...} & \multicolumn{1}{c|}{$n$} \\ \cline{2-7} 
+\multicolumn{1}{c|}{\multirow{5}{*}{From}} & \multicolumn{1}{c|}{$1$} & \multicolumn{1}{c|}{$a_{1,1}$}  & \multicolumn{1}{c|}{$a_{1,2}$}  & \multicolumn{1}{c|}{$a_{1,3}$}  & \multicolumn{1}{c|}{...}  & \multicolumn{1}{c|}{$a_{1,n}$}  \\ \cline{2-7} 
+\multicolumn{1}{c|}{}                      & \multicolumn{1}{c|}{$2$} & \multicolumn{1}{c|}{$a_{2,1}$}  & \multicolumn{1}{c|}{$a_{2,2}$}  & \multicolumn{1}{c|}{$a_{2,3}$}  & \multicolumn{1}{c|}{...}  & \multicolumn{1}{c|}{$a_{2,n}$}  \\ \cline{2-7} 
+\multicolumn{1}{c|}{}                      & \multicolumn{1}{c|}{$3$} & \multicolumn{1}{c|}{$a_{3,1}$}  & \multicolumn{1}{c|}{$a_{3,2}$}  & \multicolumn{1}{c|}{$a_{3,3}$}  & \multicolumn{1}{c|}{...}  & \multicolumn{1}{c|}{$a_{3,n}$}  \\ \cline{2-7} 
+\multicolumn{1}{c|}{}                      & \multicolumn{1}{c|}{...} & \multicolumn{1}{c|}{...}  & \multicolumn{1}{c|}{...}  & \multicolumn{1}{c|}{...}  & \multicolumn{1}{c|}{...}  & \multicolumn{1}{c|}{...}  \\ \cline{2-7} 
+\multicolumn{1}{c|}{}                      & \multicolumn{1}{c|}{$n$} & \multicolumn{1}{c|}{$a_{n,1}$}  & \multicolumn{1}{c|}{$a_{n,2}$}  & \multicolumn{1}{c|}{$a_{n,3}$}  & \multicolumn{1}{c|}{...}  & \multicolumn{1}{c|}{$a_{n,n}$}  \\ \cline{2-7} 
+\end{tabular}
+\caption{Transition Matrix}
+\end{table}
 
 \subsection{Seeded Matrices}
 \subsubsection{Assumptions}
 \begin{itemize}
 \item On picking up a chance or community chest card, the deck is entirely shuffled in a randomised order having performed the indicated action.
 \item Jail escape is a process of only escape with respect to rolling doubles or the effect of having picked up a Get Out of Jail Free card prior to getting sent to the tile.
+\item There are three selective states within Monopoly over 40 tiles:
+\begin{itemize}
+\item 40 tiles
+\item Doubles rule
+\item Community Chest/Chance cards
+\end{itemize}
+\item Therefore there are 120 states in Monopoly in any given turn.
 \end{itemize}
 
 \subsection{Simulation}
 \subsubsection{Set Up}
 In order to quickly simulate a game of Monopoly over an exceedingly large amount of rolls, a simulation of the game was programmed in \emph{Java} with respect to assumptions within the Markovian processes, as well as some generified aspects within the pseudo-random rolling process whereby a pseudo-random number was generated twice per turn using different seed values with respect to the current time in milliseconds on my machine. 
+
 \subsubsection{Aspects}
 The Monopoly simulation worked on the bases of simplified aspects where 100,000 turns of play were simulated without the aspect of money or other players involved within the turns, therefore taking only cards, jail and dice values into account as per the effects possible per turn. The following is the list of tiles in order of their probability to be landed on which tends to the long run Markovian averages:
 \subsection{Tile Probabilities}
@@ -334,6 +359,10 @@ The Monopoly simulation worked on the bases of simplified aspects where 100,000 
 \end{flushleft}
 \end{minipage}
 \end{align*}
+\begin{align*}
+\centering
+\includegraphics[width=1\textwidth]{tile_prob_graph.png}
+\end{align*}
 Here is a graphical representation of the degree of simulated probabilities within long run averages of Monopoly within the most probabilistic 20 tiles.
 \begin{align*}
 \centering
@@ -343,16 +372,50 @@ Note that Jail, as forecasted, is the most probabilistic tile through long-run s
 
 \subsubsection{Probabilistic Outcome}
 Given that the expected value of two dice is 7, it is optimal to purchase as per a threshold of +7 tiles with respect to turn from the jail tile in order to gain the maximum probability of other players landing on it. By maximising the probability of other players landing on tiles owned by the player himself, there is a higher cumulative frequency for receiving rent and the chance of inflicting bankruptcy on others.
+
+\subsection{Further Expansion}
+Given the probabilistic outcome strategy for individual tiles through Markovian logic, it is possible to extend this theory to developing property within the game. Given a probability of landing on a certain tile within a turn as the outcome of two dice, the following inequality must be satisfied in order to ensure a steady income and a lack of bankruptcy:
+$$Income \geq Cost$$
+This begets an expansion of what revenue really pertains to:
+$$p(n)*Rent*E[X]*n \geq Cost$$
+Whereby on reordering becomes:
+$$n = \left(\frac{Cost}{p(n)*Rent*E[X]}\right)$$
+Where $n$ is the current turn of play.
 \section{Conclusion}
 Overall a traditional game of Monopoly pertains to probabilistic rules governed by Markovian processes and dice theory. Through simulation and comparison with theory, features that were predicted to occur, were seen through Markov Chain probability matrices. Simulations and theory taken from studies on Monopoly games will differ slightly in comparison to this study, as dice may contain bias by having defects, as well as the addition of money and other players to play against. Simulations for determining the probability of landing on squares were on a single player, infinite rolls basis which is not true to actual gameplay; but nonetheless, provides a good basis for theory on understanding the influence of factors within a game, as well as that of seeing how each tile is not equal, and therefore choices of property determined by Markovian processes can be interpolated to improve chances of winning.
 \section{Bibliography}
 \begin{thebibliography}{9}
 
-\bibitem{oflynned}
-  Edmond O' Flynn,
-  \emph{Monopoly Java Simulation},
-  November, 
-  2015
-
+\bibitem{bewersdorffj}
+  Jorg Bewersdorff,
+  \emph{Luck, Logic, and White Lies: The Mathematics of Game},
+  A K Peters (2005),
+  106-120.
+\bibitem{snellj}
+  J. Laurie Snell,
+  \emph{Finite Markov Chains and their Applications},
+  The American Mathematical Monthly (1959),
+  66 (2),
+  99-104.
+\bibitem{ashr}
+  R. B. Ash,
+  \emph{Basic Probability Theory},
+  (1970),
+  Chapter 7.
+\bibitem{bradym}
+  Maxine Brady,
+  \emph{The Monopoly Book},
+  D. McKay, 
+  (1974).
+\bibitem{fellerw}
+  W Feller,
+  \emph{An Introduction to Probability Theory and Its Applications, Vol. 1},
+  Wiley (1950).
+\bibitem{hentzeli}
+  Irving R. Hentzel,
+  \emph{How to Win at Monopoly},
+  Saturday Review of the Sciences,
+  (April 1973),
+  44-48.
 \end{thebibliography}
 \end{document}

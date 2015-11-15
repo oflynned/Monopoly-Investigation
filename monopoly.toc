@@ -15,12 +15,14 @@
 \contentsline {section}{\numberline {3}Markov Chains}{7}{section.3}
 \contentsline {subsection}{\numberline {3.1}What is a Markov Chain?}{7}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Parametrisation}{7}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Seeded Matrices}{7}{subsection.3.3}
-\contentsline {subsubsection}{\numberline {3.3.1}Assumptions}{7}{subsubsection.3.3.1}
-\contentsline {subsection}{\numberline {3.4}Simulation}{7}{subsection.3.4}
-\contentsline {subsubsection}{\numberline {3.4.1}Set Up}{7}{subsubsection.3.4.1}
+\contentsline {subsubsection}{\numberline {3.2.1}Transition Matrices}{7}{subsubsection.3.2.1}
+\contentsline {subsection}{\numberline {3.3}Seeded Matrices}{8}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}Assumptions}{8}{subsubsection.3.3.1}
+\contentsline {subsection}{\numberline {3.4}Simulation}{8}{subsection.3.4}
+\contentsline {subsubsection}{\numberline {3.4.1}Set Up}{8}{subsubsection.3.4.1}
 \contentsline {subsubsection}{\numberline {3.4.2}Aspects}{8}{subsubsection.3.4.2}
-\contentsline {subsection}{\numberline {3.5}Tile Probabilities}{8}{subsection.3.5}
-\contentsline {subsubsection}{\numberline {3.5.1}Probabilistic Outcome}{9}{subsubsection.3.5.1}
-\contentsline {section}{\numberline {4}Conclusion}{9}{section.4}
-\contentsline {section}{\numberline {5}Bibliography}{10}{section.5}
+\contentsline {subsection}{\numberline {3.5}Tile Probabilities}{9}{subsection.3.5}
+\contentsline {subsubsection}{\numberline {3.5.1}Probabilistic Outcome}{10}{subsubsection.3.5.1}
+\contentsline {subsection}{\numberline {3.6}Further Expansion}{11}{subsection.3.6}
+\contentsline {section}{\numberline {4}Conclusion}{11}{section.4}
+\contentsline {section}{\numberline {5}Bibliography}{11}{section.5}

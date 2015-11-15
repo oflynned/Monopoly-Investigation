@@ -14,12 +14,14 @@
 \BOOKMARK [1][-]{section.3}{Markov Chains}{}% 14
 \BOOKMARK [2][-]{subsection.3.1}{What is a Markov Chain?}{section.3}% 15
 \BOOKMARK [2][-]{subsection.3.2}{Parametrisation}{section.3}% 16
-\BOOKMARK [2][-]{subsection.3.3}{Seeded Matrices}{section.3}% 17
-\BOOKMARK [3][-]{subsubsection.3.3.1}{Assumptions}{subsection.3.3}% 18
-\BOOKMARK [2][-]{subsection.3.4}{Simulation}{section.3}% 19
-\BOOKMARK [3][-]{subsubsection.3.4.1}{Set Up}{subsection.3.4}% 20
-\BOOKMARK [3][-]{subsubsection.3.4.2}{Aspects}{subsection.3.4}% 21
-\BOOKMARK [2][-]{subsection.3.5}{Tile Probabilities}{section.3}% 22
-\BOOKMARK [3][-]{subsubsection.3.5.1}{Probabilistic Outcome}{subsection.3.5}% 23
-\BOOKMARK [1][-]{section.4}{Conclusion}{}% 24
-\BOOKMARK [1][-]{section.5}{Bibliography}{}% 25
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Transition Matrices}{subsection.3.2}% 17
+\BOOKMARK [2][-]{subsection.3.3}{Seeded Matrices}{section.3}% 18
+\BOOKMARK [3][-]{subsubsection.3.3.1}{Assumptions}{subsection.3.3}% 19
+\BOOKMARK [2][-]{subsection.3.4}{Simulation}{section.3}% 20
+\BOOKMARK [3][-]{subsubsection.3.4.1}{Set Up}{subsection.3.4}% 21
+\BOOKMARK [3][-]{subsubsection.3.4.2}{Aspects}{subsection.3.4}% 22
+\BOOKMARK [2][-]{subsection.3.5}{Tile Probabilities}{section.3}% 23
+\BOOKMARK [3][-]{subsubsection.3.5.1}{Probabilistic Outcome}{subsection.3.5}% 24
+\BOOKMARK [2][-]{subsection.3.6}{Further Expansion}{section.3}% 25
+\BOOKMARK [1][-]{section.4}{Conclusion}{}% 26
+\BOOKMARK [1][-]{section.5}{Bibliography}{}% 27
