@@ -301,6 +301,10 @@ In order to quickly simulate a game of Monopoly over an exceedingly large amount
 
 \subsubsection{Aspects}
 The Monopoly simulation worked on the bases of simplified aspects where 100,000 turns of play were simulated without the aspect of money or other players involved within the turns, therefore taking only cards, jail and dice values into account as per the effects possible per turn. The following is the list of tiles in order of their probability to be landed on which tends to the long run Markovian averages:
+\begin{align*}
+\centering
+\includegraphics[width=1\textwidth]{tile_prob_graph.png}
+\end{align*}
 \subsection{Tile Probabilities}
 \begin{align*}
 \label{Tile Probabilities}
@@ -358,17 +362,15 @@ The Monopoly simulation worked on the bases of simplified aspects where 100,000 
 \end{itemize}
 \end{flushleft}
 \end{minipage}
-\end{align*}
-\begin{align*}
-\centering
-\includegraphics[width=1\textwidth]{tile_prob_graph.png}
-\end{align*}
-Here is a graphical representation of the degree of simulated probabilities within long run averages of Monopoly within the most probabilistic 20 tiles.
+\end{align*}\\
+Note that Jail, as forecasted, is the most probabilistic tile through long-run simulation; followed then by Illinois Avenue, which is a total of 14 tiles away from Jail (the expected value over two turns summed: $2*3.5*2$).
+\\
+Here is a graphical representation of the degree of simulated probabilities within long run averages of Monopoly within the most probabilistic 20 tiles:
+\\
 \begin{align*}
 \centering
 \includegraphics[width=0.6\textwidth]{tile_outcome.jpg}
 \end{align*}
-Note that Jail, as forecasted, is the most probabilistic tile through long-run simulation; followed then by Illinois Avenue, which is a total of 14 tiles away from Jail (the expected value over two turns summed: $2*3.5*2$).
 
 \subsubsection{Probabilistic Outcome}
 Given that the expected value of two dice is 7, it is optimal to purchase as per a threshold of +7 tiles with respect to turn from the jail tile in order to gain the maximum probability of other players landing on it. By maximising the probability of other players landing on tiles owned by the player himself, there is a higher cumulative frequency for receiving rent and the chance of inflicting bankruptcy on others.

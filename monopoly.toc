@@ -23,6 +23,6 @@
 \contentsline {subsubsection}{\numberline {3.4.2}Aspects}{8}{subsubsection.3.4.2}
 \contentsline {subsection}{\numberline {3.5}Tile Probabilities}{9}{subsection.3.5}
 \contentsline {subsubsection}{\numberline {3.5.1}Probabilistic Outcome}{10}{subsubsection.3.5.1}
-\contentsline {subsection}{\numberline {3.6}Further Expansion}{11}{subsection.3.6}
+\contentsline {subsection}{\numberline {3.6}Further Expansion}{10}{subsection.3.6}
 \contentsline {section}{\numberline {4}Conclusion}{11}{section.4}
 \contentsline {section}{\numberline {5}Bibliography}{11}{section.5}
