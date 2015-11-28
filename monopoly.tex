@@ -1,5 +1,4 @@
 \documentclass[12pt]{article}
-\usepackage{hyperref}
 \usepackage{multirow}
 \usepackage[english]{babel}
 \usepackage[utf8x]{inputenc}
@@ -54,7 +53,7 @@ Brett \textsc{Houlding}
 \cleardoublepage
 \setcounter{page}{1}
 
-\newgeometry{top=2cm,left=2cm,bottom=2cm,right=2cm}
+\newgeometry{top=2.5cm,left=2.5cm,bottom=2.5cm,right=2.5cm}
 
 \section{Introduction}
 \subsection{What is Monopoly?}
@@ -237,8 +236,8 @@ The probability of rolling out of jail within 3 turns is approximately 42\%, giv
 \begin{tabular}{cccc}
 Roll & Process              & Probability & Cumulative Probability \\
 1    & $\frac{1}{6}$                  & 16.7\%        & 16.7\%                   \\
-2    & $\frac{5}{6}*\frac{1}{6}$         & 13.8\%        & 30.5\%                   \\
-3    & $\frac{5}{6}*\frac{5}{6}*\frac{1}{6}$ & 11.8\%        & 42.3\%                  
+2    & $\frac{5}{6}\cdot\frac{1}{6}$         & 13.8\%        & 30.5\%                   \\
+3    & $\frac{5}{6}\cdot\frac{5}{6}\cdot\frac{1}{6}$ & 11.8\%        & 42.3\%                  
 \end{tabular}
 \caption{Cumulative Double Frequency}
 \end{table}
@@ -260,12 +259,12 @@ In order to calculate the probabilities per tile, Monopoly must have a set of Ma
 \item Steady state vector
 \begin{itemize}
 \item Adheres to where the sequence $x_0,x_1,...x_n$ is a set of probability vectors whereby the stochastic matrix A is such that $x_{n+1}=Ax_{n}$.
-\item Approximates the long term process of the behaviour whereby over subsequent iterations, the Markov Chain tends to $(Ax_{n+1})A=A^2x_{n+1},A^3x_{n+1},...,A^nx_{n+1}$ where $n$ is the period later from the initial time $t$
+\item Approximates the long term process of the behaviour whereby over subsequent iterations, the Markov Chain tends to $(Ax_{n+1})A=A^2x_{n+1},A^3x_{n+1},...,A^nx_{n+1}$ where $n$ is the period later from the initial time $t$ where in this case, $n=40$ given the transition matrix below.
 \end{itemize}
 \end{itemize}
 
 \subsubsection{Transition Matrices}
-The 40x40, or 1,600 transitional probabilities for all tiles within the Markov sequence encodes matrix M in a 40x40 of the probabilities of moving from one tile to another for in this case, $n=40$.
+Transition matrices are a stochastic process within Markovian theory where a square matrix is populated by non-negative real numbers whereby each row sums to 1. Given the element in the $i^{th}$ row and $j^{th}$ column, the probability of moving from state i to state j may be calculated over its long run average within one time step.
 \begin{table}[h]
 \centering
 \label{Transition Matrix}
@@ -280,6 +279,76 @@ The 40x40, or 1,600 transitional probabilities for all tiles within the Markov s
 \end{tabular}
 \caption{Transition Matrix}
 \end{table}
+\\
+The 1,600 transitional probabilities for all tiles within the Markov sequence are encoded in a 40x40 matrix of the probabilities of moving from one tile to another. Given the states, the transition matrix can be made more complex by extending to 42x42, given the intention to stay in jail for up to 3 turns inclusive.
+
+\subsubsection{Simplified Chains}
+In a steady population where the population remains constant, neglecting population changes by immigration, emigration, deaths and births; it is possible to work out the proportions of the population inhabiting each area A, B, and C in which there is a system of change occurring.
+
+For example, assume areas A, B, and C where the following conditions of the system are true on an annual basis of t:
+\begin{itemize}
+\item Of the population within A, 97\% will stay in A
+\begin{itemize}
+\item 1\% will more to B from A
+\item 1\% will move to C from A
+\end{itemize}
+\item Of the population within B, 95\% will stay in B
+\begin{itemize}
+\item 3\% will more to A from B
+\item 2\% will move to C from B
+\end{itemize}
+\item Of the population within C, 96\% will stay in C
+\begin{itemize}
+\item 3\% will more to A from C
+\item 1\% will move to B from C
+\end{itemize}
+\end{itemize}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{ccccc}
+                      & \multicolumn{4}{c}{To} \\
+\multirow{4}{*}{From} &   & A    & B    & C    \\
+                      & A & 0.97 & 0.01 & 0.02 \\
+                      & B & 0.03 & 0.95 & 0.02 \\
+                      & C & 0.03 & 0.01 & 0.96
+\end{tabular}
+\caption{Transitional Matrix for A, B, and C}
+\end{table}
+
+Assuming a population of 1000 in B, given no restrictions on initial population distributions and 0 inhabitants in A and C, time can elapse and the distributive effect of the population spread should be observed.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{cccc}
+Year & A       & B       & C       \\
+0    & 0       & 1000    & 0       \\
+1    & 30      & 950     & 20      \\
+2    & 58.2    & 903     & 38.8    \\
+...  & ...     & ...     & ...     \\
+100  & 499     & 168.4   & 332.6   \\
+200  & 499.998 & 166.667 & 333.32  \\
+$t\to\infty$    & $1000\cdot\frac{1}{2}$     & $1000\cdot\frac{1}{6}$  & $1000\cdot\frac{1}{3}$
+\end{tabular}
+\caption{Long Run Observation within the system}
+\end{table} 
+Given the system reaches its steady state conditions, the proportions no longer change, and the value at $t+1$, where $t$ has reached steady state, are equivalent in value, therefore
+
+\begin{itemize}
+\item $P_A = 0.5$
+\item $P_B = 0.166\dot{6}$
+\item $P_C = 0.33\dot{3}$
+\end{itemize}
+
+Under conditions, generic equations can be formed for the system, where any two of the three states can be solved via algebraic simultaneous equations forming the steady state proportions.
+
+\begin{itemize}
+\item $P_A = 0.97 \cdot P_A + 0.03 \cdot P_B + 0.03 \cdot P_C$
+\item $P_B = 0.01 \cdot P_A + 0.95 \cdot P_B + 0.01 \cdot P_C$
+\item $P_C = 0.02 \cdot P_A + 0.02 \cdot P_B + 0.96 \cdot P_C$
+\item $P_A+P_B+P_C=1.000$
+\end{itemize}
+This process can be extended to Monopoly, where instead of a 3x3 matrix, there is a 40x40 matrix of tiles that is immutable and governs steady state proportions by long run averages.
 
 \subsection{Seeded Matrices}
 \subsubsection{Assumptions}
@@ -288,9 +357,9 @@ The 40x40, or 1,600 transitional probabilities for all tiles within the Markov s
 \item Jail escape is a process of only escape with respect to rolling doubles or the effect of having picked up a Get Out of Jail Free card prior to getting sent to the tile.
 \item There are three selective states within Monopoly over 40 tiles:
 \begin{itemize}
-\item 40 tiles
-\item Doubles rule
-\item Community Chest/Chance cards
+\item 40 tiles in a regular state
+\item Doubles rule with the roll again state
+\item Community Chest/Chance cards state
 \end{itemize}
 \item Therefore there are 120 states in Monopoly in any given turn.
 \end{itemize}
@@ -363,26 +432,26 @@ The Monopoly simulation worked on the bases of simplified aspects where 100,000 
 \end{flushleft}
 \end{minipage}
 \end{align*}\\
-Note that Jail, as forecasted, is the most probabilistic tile through long-run simulation; followed then by Illinois Avenue, which is a total of 14 tiles away from Jail (the expected value over two turns summed: $2*3.5*2$).
+Note that Jail, as forecasted, is the most probabilistic tile through long-run simulation; followed then by Illinois Avenue, which is a total of 14 tiles away from Jail (the expected value over two turns summed: $2\cdot3.5\cdot2$).
 \\
 Here is a graphical representation of the degree of simulated probabilities within long run averages of Monopoly within the most probabilistic 20 tiles:
 \\
 \begin{align*}
 \centering
-\includegraphics[width=0.6\textwidth]{tile_outcome.jpg}
+\includegraphics[width=0.75\textwidth]{tile_outcome.jpg}
 \end{align*}
 
 \subsubsection{Probabilistic Outcome}
-Given that the expected value of two dice is 7, it is optimal to purchase as per a threshold of +7 tiles with respect to turn from the jail tile in order to gain the maximum probability of other players landing on it. By maximising the probability of other players landing on tiles owned by the player himself, there is a higher cumulative frequency for receiving rent and the chance of inflicting bankruptcy on others.
+Given that the expected value of two dice is 7, it is optimal to purchase as per a threshold of +7 tiles with respect to turn from the jail tile in order to gain the maximum probability of other players landing on it. By maximising the probability of other players landing on tiles owned by the player himself, there is a higher cumulative frequency for receiving rent and the chance of inflicting bankruptcy on others. Note that the second most probabilistic tile is a total of 14 tiles away from jail, which over two rolls corresponds to $4 \cdot E[X]$, or $4\cdot 3.5$.
 
 \subsection{Further Expansion}
 Given the probabilistic outcome strategy for individual tiles through Markovian logic, it is possible to extend this theory to developing property within the game. Given a probability of landing on a certain tile within a turn as the outcome of two dice, the following inequality must be satisfied in order to ensure a steady income and a lack of bankruptcy:
 $$Income \geq Cost$$
 This begets an expansion of what revenue really pertains to:
-$$p(n)*Rent*E[X]*n \geq Cost$$
+$$p(n)\cdot Rent\cdot E[X] \cdot n \geq Cost$$
 Whereby on reordering becomes:
-$$n = \left(\frac{Cost}{p(n)*Rent*E[X]}\right)$$
-Where $n$ is the current turn of play.
+$$n = \left(\frac{Cost}{p(n)\cdot Rent\cdot E[X]}\right)$$
+Where $n$ is the current turn of play. Given that properties have the potential to be developed when all three tiles within the colour group are owned, this causes the potential for bankruptcy to increase on landing on a developed tile as rent now increases proportionally with respect to the tile's state of development.
 \section{Conclusion}
 Overall a traditional game of Monopoly pertains to probabilistic rules governed by Markovian processes and dice theory. Through simulation and comparison with theory, features that were predicted to occur, were seen through Markov Chain probability matrices. Simulations and theory taken from studies on Monopoly games will differ slightly in comparison to this study, as dice may contain bias by having defects, as well as the addition of money and other players to play against. Simulations for determining the probability of landing on squares were on a single player, infinite rolls basis which is not true to actual gameplay; but nonetheless, provides a good basis for theory on understanding the influence of factors within a game, as well as that of seeing how each tile is not equal, and therefore choices of property determined by Markovian processes can be interpolated to improve chances of winning.
 \section{Bibliography}
