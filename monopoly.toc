@@ -5,15 +5,15 @@
 \contentsline {section}{\numberline {2}Model \& Simulation Background Theory}{2}
 \contentsline {subsection}{\numberline {2.1}Dice Rolls}{2}
 \contentsline {subsection}{\numberline {2.2}Chance and Community Chests}{3}
-\contentsline {subsubsection}{\numberline {2.2.1}Chance Cards}{4}
-\contentsline {subsubsection}{\numberline {2.2.2}Community Chest Cards}{5}
+\contentsline {subsubsection}{\numberline {2.2.1}Chance Cards}{3}
+\contentsline {subsubsection}{\numberline {2.2.2}Community Chest Cards}{4}
 \contentsline {subsubsection}{\numberline {2.2.3}Exploitation}{6}
 \contentsline {subsection}{\numberline {2.3}Jail}{7}
 \contentsline {subsubsection}{\numberline {2.3.1}Increasing Odds}{7}
 \contentsline {subsubsection}{\numberline {2.3.2}Paradigm}{8}
 \contentsline {section}{\numberline {3}Markov Chains}{8}
 \contentsline {subsection}{\numberline {3.1}What is a Markov Chain?}{8}
-\contentsline {subsection}{\numberline {3.2}Parametrisation}{8}
+\contentsline {subsection}{\numberline {3.2}Parametrisation}{9}
 \contentsline {subsubsection}{\numberline {3.2.1}Transition Matrices}{9}
 \contentsline {subsubsection}{\numberline {3.2.2}Simplified Chains}{9}
 \contentsline {subsection}{\numberline {3.3}Seeded Matrices}{11}
@@ -21,8 +21,9 @@
 \contentsline {subsection}{\numberline {3.4}Simulation}{11}
 \contentsline {subsubsection}{\numberline {3.4.1}Set Up}{11}
 \contentsline {subsubsection}{\numberline {3.4.2}Aspects}{11}
-\contentsline {subsection}{\numberline {3.5}Tile Probabilities}{13}
-\contentsline {subsubsection}{\numberline {3.5.1}Probabilistic Outcome}{14}
-\contentsline {subsection}{\numberline {3.6}Further Expansion}{14}
-\contentsline {section}{\numberline {4}Conclusion}{15}
-\contentsline {section}{\numberline {5}Bibliography}{15}
+\contentsline {subsection}{\numberline {3.5}Tile Probabilities}{12}
+\contentsline {subsubsection}{\numberline {3.5.1}Probabilistic Outcome}{13}
+\contentsline {subsection}{\numberline {3.6}Further Expansion}{13}
+\contentsline {section}{\numberline {4}Conclusion}{14}
+\contentsline {section}{\numberline {5}Bibliography}{14}
+\contentsline {section}{\numberline {6}Source Code}{14}
