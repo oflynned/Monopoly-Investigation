@@ -753,55 +753,5 @@ public void communityChest(int position){
 			landed(this.currentPosition);
 		}	
 	}
-	
-//Override the Native Print Function to Print a Hash Map in Pairs of Two in Descending Order
-@Override
-	public String toString(){
-		
-		String positionFrequencies="";
-		int i;
-		int sum=0;
-		float totProb=0;
-
-		System.out.println("---------------------------------");
-		HashMap<String, Float> map = new HashMap<String, Float>();
-		
-		for(i=0;i<41;i++){
-			float freq = (float)this.landedOn[i]/Game.NUMBER_OF_TURNS;
-			sum = sum + this.landedOn[i];			
-			map.put(Game.positions[i], freq);
-			totProb+=freq;
-		}
-		
-		Set<Entry<String, Float>> entries = map.entrySet();
-		Comparator<Entry<String, Float>> valueComparator = new Comparator<Entry<String,Float>>() { 
-			@Override 
-			public int compare(Entry<String, Float> e1, Entry<String, Float> e2) { 
-					Float v1 = e2.getValue(); 
-					Float v2 = e1.getValue(); 
-					return v1.compareTo(v2); 
-				} 
-			};
-			 
-		List<Entry<String, Float>> listOfEntries = new ArrayList<Entry<String, Float>>(entries);
-		Collections.sort(listOfEntries, valueComparator); 
-		LinkedHashMap<String, Float> sortedByValue = new LinkedHashMap<String, Float>(listOfEntries.size());
-		for(Entry<String, Float> entry : listOfEntries){ 
-			sortedByValue.put(entry.getKey(), entry.getValue()); 
-		}
-		System.out.println("HashMap after sorting entries by values "); 
-		Set<Entry<String, Float>> entrySetSortedByValue = sortedByValue.entrySet(); 
-		
-		int count = 1;
-		for(Entry<String, Float> mapping : entrySetSortedByValue){
-			System.out.println(count + ": " + mapping.getKey() + " ==> " + mapping.getValue());
-			count++;
-		}
-	System.out.println("---------------------------------");
-		System.out.println("Summation of probabilities: " + totProb);
-		System.out.println("Number of spaces per turn: "+(float)(sum/this.numberOfTurns));
-		System.out.println("Total number of turns: "+this.numberOfTurns+"\nTotal number of landed ons: "+sum);
-		return positionFrequencies;	
-	}
 \end{lstlisting}
 \end{document}
