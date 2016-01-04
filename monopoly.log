@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.2)  23 DEC 2015 14:57
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.21)  4 JAN 2016 16:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -210,38 +210,78 @@ File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 130.
 )
+(/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen128
+\captionmargin@=\dimen129
+\captionwidth=\dimen130
+\caption@tempdima=\dimen131
+\caption@indent=\dimen132
+\caption@parindent=\dimen133
+\caption@hangindent=\dimen134
+)
+\c@ContinuedFloat=\count113
+Package caption Info: listings package is loaded.
+)
+\c@KVtest=\count114
+\sf@farskip=\skip46
+\sf@captopadj=\dimen135
+\sf@capskip=\skip47
+\sf@nearskip=\skip48
+\c@subfigure=\count115
+\c@subfigure@save=\count116
+\c@lofdepth=\count117
+\c@subtable=\count118
+\c@subtable@save=\count119
+\c@lotdepth=\count120
+\sf@top=\skip49
+\sf@bottom=\skip50
+)
+(/usr/share/texlive/texmf-dist/tex/latex/cite/cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 373.
+Package: cite 2010/09/10  v 5.3
+LaTeX Info: Redefining \cite on input line 464.
+)
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2013/08/26 1.5b listings language file
 ) (./monopoly.aux)
 \openout1 = `monopoly.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
  (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count113
-\scratchdimen=\dimen128
+\scratchcounter=\count121
+\scratchdimen=\dimen136
 \scratchbox=\box30
-\nofMPsegments=\count114
-\nofMParguments=\count115
+\nofMPsegments=\count122
+\nofMParguments=\count123
 \everyMPshowfont=\toks27
-\MPscratchCnt=\count116
-\MPscratchDim=\dimen129
-\MPnumerator=\count117
-\makeMPintoPDFobject=\count118
+\MPscratchCnt=\count124
+\MPscratchDim=\dimen137
+\MPnumerator=\count125
+\makeMPintoPDFobject=\count126
 \everyMPtoPDFconversion=\toks28
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
@@ -321,17 +361,20 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count119
+\c@lstlisting=\count127
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: End \AtBeginDocument code.
 <logo.png, id=1, 787.94376pt x 963.6pt>
 File: logo.png Graphic file (type png)
  <use logo.png>
-Package pdftex.def Info: logo.png used on input line 41.
+Package pdftex.def Info: logo.png used on input line 43.
 (pdftex.def)             Requested size: 83.64944pt x 102.29108pt.
 
 <monopoly_man.png, id=2, 246.9225pt x 174.6525pt>
 File: monopoly_man.png Graphic file (type png)
  <use monopoly_man.png>
-Package pdftex.def Info: monopoly_man.png used on input line 68.
+Package pdftex.def Info: monopoly_man.png used on input line 70.
 (pdftex.def)             Requested size: 167.2989pt x 118.33305pt.
 
 [1
@@ -414,156 +457,139 @@ monopoly_man.png>]
 <board.jpg, id=16, 1505.625pt x 1505.625pt>
 File: board.jpg Graphic file (type jpg)
  <use board.jpg>
-Package pdftex.def Info: board.jpg used on input line 85.
+Package pdftex.def Info: board.jpg used on input line 87.
 (pdftex.def)             Requested size: 324.36473pt x 324.36931pt.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 92.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 94.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 92.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 94.
  [1
 
 
  <./board.jpg>]
-<non_doubles_go.png, id=21, 941.5175pt x 860.21375pt>
+<non_doubles_go.png, id=22, 941.5175pt x 860.21375pt>
 File: non_doubles_go.png Graphic file (type png)
  <use non_doubles_go.png>
-Package pdftex.def Info: non_doubles_go.png used on input line 119.
+Package pdftex.def Info: non_doubles_go.png used on input line 121.
 (pdftex.def)             Requested size: 270.3012pt x 246.96169pt.
 
-<incl_doubles_go.png, id=23, 1304.875pt x 1304.875pt>
+<incl_doubles_go.png, id=24, 1304.875pt x 1304.875pt>
 File: incl_doubles_go.png Graphic file (type png)
 
 <use incl_doubles_go.png>
-Package pdftex.def Info: incl_doubles_go.png used on input line 125.
+Package pdftex.def Info: incl_doubles_go.png used on input line 123.
 (pdftex.def)             Requested size: 270.3012pt x 270.28862pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<non_doubles_jail.png, id=24, 902.37125pt x 902.37125pt>
+<non_doubles_jail.png, id=25, 902.37125pt x 902.37125pt>
 File: non_doubles_jail.png Graphic file (type png)
 
 <use non_doubles_jail.png>
-Package pdftex.def Info: non_doubles_jail.png used on input line 133.
+Package pdftex.def Info: non_doubles_jail.png used on input line 131.
 (pdftex.def)             Requested size: 270.3012pt x 270.30038pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<incl_doubles_jail.png, id=25, 1156.32pt x 1156.32pt>
+<incl_doubles_jail.png, id=26, 1156.32pt x 1156.32pt>
 File: incl_doubles_jail.png Graphic file (type png)
 
 <use incl_doubles_jail.png>
-Package pdftex.def Info: incl_doubles_jail.png used on input line 139.
+Package pdftex.def Info: incl_doubles_jail.png used on input line 133.
 (pdftex.def)             Requested size: 270.3012pt x 270.28842pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<triple_traverse.jpg, id=26, 1505.625pt x 1505.625pt>
+[2 <./non_doubles_go.png> <./incl_doubles_go.png>]
+<triple_traverse.jpg, id=33, 1505.625pt x 1505.625pt>
 File: triple_traverse.jpg Graphic file (type jpg)
 
 <use triple_traverse.jpg>
-Package pdftex.def Info: triple_traverse.jpg used on input line 146.
-(pdftex.def)             Requested size: 270.3012pt x 270.28862pt.
+Package pdftex.def Info: triple_traverse.jpg used on input line 141.
+(pdftex.def)             Requested size: 216.23764pt x 216.2309pt.
 
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+ []
 
-[2 <./non_doubles_go.png>] [3 <./incl_doubles_go.png>]
-Overfull \hbox (25.45807pt too wide) in paragraph at lines 178--203
+[3 <./non_doubles_jail.png (PNG copy)> <./incl_doubles_jail.png> <./triple_trav
+erse.jpg>]
+Overfull \hbox (25.45807pt too wide) in paragraph at lines 174--199
 []$[]$   $[]$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 178--203
+Underfull \hbox (badness 10000) in paragraph at lines 174--199
 
  []
 
-[4 <./non_doubles_jail.png (PNG copy)>]
-Overfull \hbox (8.68558pt too wide) in paragraph at lines 225--232
+[4]
+Overfull \hbox (8.68558pt too wide) in paragraph at lines 221--228
  [][] 
  []
 
-[5 <./incl_doubles_jail.png>] <jail.jpg, id=47, 1505.625pt x 1505.625pt>
-File: jail.jpg Graphic file (type jpg)
-
-<use jail.jpg>
-Package pdftex.def Info: jail.jpg used on input line 243.
-(pdftex.def)             Requested size: 324.36473pt x 324.36931pt.
+[5] <jail.jpg, id=48, 1505.625pt x 1505.625pt>
 File: jail.jpg Graphic file (type jpg)
  <use jail.jpg>
-Package pdftex.def Info: jail.jpg used on input line 243.
-(pdftex.def)             Requested size: 324.36473pt x 324.36931pt.
- [6 <./triple_traverse.jpg>] [7 <./jail.jpg>]
-<CDF.png, id=54, 760.34062pt x 277.035pt>
+Package pdftex.def Info: jail.jpg used on input line 239.
+(pdftex.def)             Requested size: 270.3012pt x 270.28862pt.
+ [6
+
+ <./jail.jpg>]
+<CDF.png, id=52, 760.34062pt x 277.035pt>
 File: CDF.png Graphic file (type png)
  <use CDF.png>
-Package pdftex.def Info: CDF.png used on input line 292.
+Package pdftex.def Info: CDF.png used on input line 290.
 (pdftex.def)             Requested size: 540.60239pt x 196.97522pt.
-File: CDF.png Graphic file (type png)
- <use CDF.png>
-Package pdftex.def Info: CDF.png used on input line 292.
-(pdftex.def)             Requested size: 540.60239pt x 196.97522pt.
- [8 <./CDF.png (PNG copy)>] [9] [10]
-<tile_prob_graph.png, id=65, 890.5772pt x 444.91219pt>
+ [7 <./CDF.png (PNG copy)>] [8] [9] <tile_prob_graph.png, id=63, 890.5772pt x 4
+44.91219pt>
 File: tile_prob_graph.png Graphic file (type png)
 
 <use tile_prob_graph.png>
-Package pdftex.def Info: tile_prob_graph.png used on input line 426.
-(pdftex.def)             Requested size: 540.60239pt x 270.0722pt.
-File: tile_prob_graph.png Graphic file (type png)
- <use tile_prob_graph.png>
-Package pdftex.def Info: tile_prob_graph.png used on input line 426.
-(pdftex.def)             Requested size: 540.60239pt x 270.0722pt.
+Package pdftex.def Info: tile_prob_graph.png used on input line 427.
+(pdftex.def)             Requested size: 486.53883pt x 243.06635pt.
 
-Overfull \hbox (3.91663pt too wide) in paragraph at lines 484--484
+Overfull \hbox (3.91663pt too wide) in paragraph at lines 487--487
 [] 
  []
 
-[11 <./tile_prob_graph.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 484--489
-
- []
-
-<tile_outcome.jpg, id=70, 1773.62625pt x 1677.26625pt>
+[10 <./tile_prob_graph.png (PNG copy)>]
+<tile_outcome.jpg, id=67, 1773.62625pt x 1677.26625pt>
 File: tile_outcome.jpg Graphic file (type jpg)
  <use tile_outcome.jpg>
-Package pdftex.def Info: tile_outcome.jpg used on input line 492.
+Package pdftex.def Info: tile_outcome.jpg used on input line 494.
 (pdftex.def)             Requested size: 405.45178pt x 383.40857pt.
-File: tile_outcome.jpg Graphic file (type jpg)
 
-<use tile_outcome.jpg>
-Package pdftex.def Info: tile_outcome.jpg used on input line 492.
-(pdftex.def)             Requested size: 405.45178pt x 383.40857pt.
- [12] [13 <./tile_outcome.jpg>] [14] [15] [16] [17]
-[18] (./monopoly.aux) ) 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[11] [12 <./tile_outcome.jpg>] [13
+
+] [14] [15] [16] [17] (./monopoly.aux) ) 
 Here is how much of TeX's memory you used:
- 5118 strings out of 494985
- 70489 string characters out of 6180356
- 199856 words of memory out of 5000000
- 8241 multiletter control sequences out of 15000+600000
+ 6388 strings out of 494985
+ 92824 string characters out of 6180355
+ 225199 words of memory out of 5000000
+ 9498 multiletter control sequences out of 15000+600000
  11990 words of font info for 42 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 38i,14n,40p,925b,1683s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex1
-0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmtt10.pfb>
-Output written on monopoly.pdf (20 pages, 3621752 bytes).
+ 44i,14n,47p,925b,1683s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on monopoly.pdf (19 pages, 3636605 bytes).
 PDF statistics:
- 130 PDF objects out of 1000 (max. 8388607)
- 80 compressed objects within 1 object stream
+ 131 PDF objects out of 1000 (max. 8388607)
+ 81 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
